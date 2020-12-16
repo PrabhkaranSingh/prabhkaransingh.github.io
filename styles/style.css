@@ -7,7 +7,7 @@ img {
     height: auto;
     display: block;
     position: absolute;
-    bottom: 50%;
+    bottom: 48%;
     left: 37.5%;
     filter: drop-shadow(-2px 0 15px rgb(0, 81, 255));
     animation-name: fade;
@@ -24,7 +24,7 @@ div {
 
 p {
     position: relative;
-    top: 50%;
+    top: 52%;
     color: white;
     font-family: 'Orbitron', sans-serif;
     text-align: center;
