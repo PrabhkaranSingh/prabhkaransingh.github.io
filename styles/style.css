@@ -9,7 +9,7 @@ img {
     position: absolute;
     bottom: 48%;
     left: 37.5%;
-    filter: drop-shadow(0 0 1vw rgb(0, 102, 255));
+    filter: drop-shadow(0 0 1.5vw rgb(0, 140, 255));
     animation-name: fade;
     animation-duration: 1s;
 }
@@ -28,7 +28,7 @@ p {
     color: white;
     font-family: 'Orbitron', sans-serif;
     text-align: center;
-    text-shadow: 0 0 1vw rgb(0, 102, 255);
+    text-shadow: 0 0 1.5vw rgb(0, 140, 255);
     font-size: 3vw;
     animation-name: fade;
     animation-duration: 1s;
