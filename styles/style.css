@@ -2,6 +2,40 @@ body {
     background-color: black;
 }
 
+#blue {
+    background: blue;
+    height: 40vw;
+    width: 40vw;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -20vw;
+    margin-left: -20vw;
+    border-radius: 5vw;
+}
+
+#black {
+    background: black;
+    height: 39vw;
+    width: 39vw;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -19.5vw;
+    margin-left: -19.5vw;
+    border-radius: 4.875vw;
+}
+
+#pic-text {
+    position: absolute;
+    bottom: 0%;
+    left: 30%;
+    width: 40%;
+    height: 100%;
+}
+
 img {
     width: 25%;
     height: auto;
@@ -12,14 +46,6 @@ img {
     filter: drop-shadow(0 0 1vw rgb(0, 205, 255));
     animation-name: fade;
     animation-duration: 1s;
-}
-
-div {
-    position: absolute;
-    bottom: 0%;
-    left: 30%;
-    width: 40%;
-    height: 100%;
 }
 
 p {
