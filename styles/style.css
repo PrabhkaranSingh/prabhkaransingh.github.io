@@ -9,9 +9,9 @@ img {
     position: absolute;
     bottom: 48%;
     left: 37.5%;
-    filter: drop-shadow(0px 0 20px rgb(0, 102, 255));
+    filter: drop-shadow(0 0 1vw rgb(0, 102, 255));
     animation-name: fade;
-    animation-duration: 15s;
+    animation-duration: 1s;
 }
 
 div {
@@ -28,10 +28,10 @@ p {
     color: white;
     font-family: 'Orbitron', sans-serif;
     text-align: center;
-    text-shadow: 0px 0 20px rgb(0, 102, 255);
+    text-shadow: 0 0 1vw rgb(0, 102, 255);
     font-size: 3vw;
     animation-name: fade;
-    animation-duration: 15s;
+    animation-duration: 1s;
     padding: 0 0 0 0;
     margin: 0 0 0 0;
 }
