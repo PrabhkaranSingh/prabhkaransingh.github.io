@@ -3,29 +3,43 @@ body {
 }
 
 #blue {
-    background: blue;
-    height: 40vw;
-    width: 40vw;
+    background: linear-gradient(180deg, rgb(0, 205, 255), rgb(0, 0, 165));
+    height: 50vw;
+    width: 50vw;
     display: block;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -20vw;
-    margin-left: -20vw;
-    border-radius: 5vw;
+    margin-top: -23vw;
+    margin-left: -25vw;
+    border-radius: 12.5vw;
+    animation-name: fade;
+    animation-duration: 15s;
 }
 
 #black {
     background: black;
-    height: 39vw;
-    width: 39vw;
+    height: 49.5vw;
+    width: 49.5vw;
     display: block;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -19.5vw;
-    margin-left: -19.5vw;
-    border-radius: 4.875vw;
+    margin-top: -22.75vw;
+    margin-left: -24.75vw;
+    border-radius: 12.375vw;
+}
+
+#black2 {
+    background: black;
+    height: 2vw;
+    width: 7vw;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 25vw;
+    margin-left: -3.5vw;
 }
 
 #pic-text {
@@ -43,9 +57,9 @@ img {
     position: absolute;
     bottom: 48%;
     left: 37.5%;
-    filter: drop-shadow(0 0 1vw rgb(0, 205, 255));
+    filter: drop-shadow(0 0 1vw rgb(0, 150, 255));
     animation-name: fade;
-    animation-duration: 1s;
+    animation-duration: 15s;
 }
 
 p {
@@ -54,10 +68,10 @@ p {
     color: white;
     font-family: 'Orbitron', sans-serif;
     text-align: center;
-    text-shadow: 0 0 1vw rgb(0, 205, 255);
-    font-size: 3vw;
+    text-shadow: 0 0 1vw rgb(0, 150, 255);
+    font-size: 3.2vw;
     animation-name: fade;
-    animation-duration: 1s;
+    animation-duration: 15s;
     padding: 0 0 0 0;
     margin: 0 0 0 0;
 }
