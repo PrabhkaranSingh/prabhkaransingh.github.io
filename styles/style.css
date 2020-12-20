@@ -4,42 +4,52 @@ body {
 
 #blue {
     background: linear-gradient(180deg, rgb(0, 205, 255), rgb(0, 0, 165));
-    height: 50vw;
-    width: 50vw;
+    height: 40vw;
+    width: 40vw;
     display: block;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -23vw;
-    margin-left: -25vw;
-    border-radius: 12.5vw;
-    animation-name: fade;
-    animation-duration: 15s;
+    margin-top: -20vw;
+    margin-left: -20vw;
+    border-radius: 25%;
+    animation-name: fade2;
+    animation-duration: 10s;
 }
 
 #black {
     background: black;
-    height: 49.5vw;
-    width: 49.5vw;
+    height: 39.6vw;
+    width: 39.6vw;
     display: block;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -22.75vw;
-    margin-left: -24.75vw;
-    border-radius: 12.375vw;
+    margin-top: -19.8vw;
+    margin-left: -19.8vw;
+    border-radius: 25%;
 }
 
 #black2 {
     background: black;
-    height: 2vw;
-    width: 7vw;
+    height: 3vw;
+    width: 5.56vw;
     display: block;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: 25vw;
-    margin-left: -3.5vw;
+    margin-top: 18vw;
+    margin-left: -2.28vw;
+}
+
+#Skull {
+    height: auto;
+    width: 5.56vw;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -2.28vw;
 }
 
 #pic-text {
@@ -50,13 +60,14 @@ body {
     height: 100%;
 }
 
-img {
-    width: 25%;
+#Omega {
+    width: 8vw;
     height: auto;
     display: block;
     position: absolute;
-    bottom: 48%;
-    left: 37.5%;
+    bottom: 50%;
+    left: 50%;
+    margin-left: -4vw;
     filter: drop-shadow(0 0 1vw rgb(0, 150, 255));
     animation-name: fade;
     animation-duration: 15s;
@@ -64,16 +75,17 @@ img {
 
 p {
     position: relative;
-    top: 53%;
+    top: 50%;
     color: white;
     font-family: 'Orbitron', sans-serif;
     text-align: center;
     text-shadow: 0 0 1vw rgb(0, 150, 255);
-    font-size: 3.2vw;
+    font-size: 2.56vw;
     animation-name: fade;
     animation-duration: 15s;
     padding: 0 0 0 0;
-    margin: 0 0 0 0;
+    margin: 1vw 0 0 0;
+
 }
 
 @keyframes fade {
@@ -81,6 +93,16 @@ p {
         opacity: 0;
     }
     33.33%{
+        opacity: 0;
+    }
+}
+
+@keyframes fade2 {
+    0% {
+        opacity: 0;
+    }
+
+    33.33% {
         opacity: 0;
     }
 }
