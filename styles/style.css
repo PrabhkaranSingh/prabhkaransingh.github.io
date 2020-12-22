@@ -97,8 +97,14 @@ p {
     }
     40% {
         opacity: 0;
-        text-shadow: 0 0 10vw rgb(255, 255, 255);
-        filter: drop-shadow(0 0 10vw rgb(255, 255, 255));
+    }
+    70% {
+        text-shadow: 0 0 5vw rgb(110, 202, 255);
+        filter: drop-shadow(0 0 5vw rgb(110, 202, 255));
+    }
+    80% {
+        text-shadow: 0 0 1vw rgb(0, 150, 255);
+        filter: drop-shadow(0 0 1vw rgb(0, 150, 255));
     }
 }
 
