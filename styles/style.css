@@ -4,14 +4,14 @@ body {
 
 #blue {
     background: linear-gradient(180deg, rgb(0, 205, 255), rgb(0, 0, 165));
-    height: 40vw;
-    width: 40vw;
+    height: 35vw;
+    width: 35vw;
     display: block;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -20vw;
-    margin-left: -20vw;
+    margin-top: -17.5vw;
+    margin-left: -17.5vw;
     border-radius: 25%;
     animation-name: fade2;
     animation-duration: 10s;
@@ -19,38 +19,38 @@ body {
 
 #black {
     background: black;
-    height: 39.6vw;
-    width: 39.6vw;
+    height: 34.8vw;
+    width: 34.8vw;
     display: block;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -19.8vw;
-    margin-left: -19.8vw;
+    margin-top: -17.4vw;
+    margin-left: -17.4vw;
     border-radius: 25%;
 }
 
 #black2 {
     background: linear-gradient(90deg, rgba(0, 0, 0, 0), black, black, rgba(0, 0, 0, 0));
     height: 3vw;
-    width: 5.56vw;
+    width: 4vw;
     display: block;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: 18vw;
-    margin-left: -2.78vw;
+    margin-top: 16.2vw;
+    margin-left: -2vw;
 }
 
 #Skull {
     height: auto;
-    width: 5.56vw;
+    width: 4vw;
     display: block;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-left: -2.78vw;
-    margin-top: 18vw;
+    margin-left: -2vw;
+    margin-top: 16.2vw;
     animation-name: fade2;
     animation-duration: 10s;
 }
@@ -64,13 +64,13 @@ body {
 }
 
 #Omega {
-    width: 8vw;
+    width: 6vw;
     height: auto;
     display: block;
     position: absolute;
     bottom: 50%;
     left: 50%;
-    margin-left: -4vw;
+    margin-left: -3vw;
     filter: drop-shadow(0 0 1vw rgb(0, 150, 255));
     animation-name: fade;
     animation-duration: 15s;
@@ -83,7 +83,7 @@ p {
     font-family: 'Orbitron', sans-serif;
     text-align: center;
     text-shadow: 0 0 1vw rgb(0, 150, 255);
-    font-size: 2.56vw;
+    font-size: 2.5vw;
     animation-name: fade;
     animation-duration: 15s;
     padding: 0 0 0 0;
@@ -97,6 +97,8 @@ p {
     }
     40% {
         opacity: 0;
+        text-shadow: 0 0 10vw rgb(255, 255, 255);
+        filter: drop-shadow(0 0 10vw rgb(255, 255, 255));
     }
 }
 
