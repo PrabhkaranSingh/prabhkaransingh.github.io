@@ -102,9 +102,9 @@ p {
         text-shadow: 0 0 5vw rgb(110, 202, 255);
         filter: drop-shadow(0 0 5vw rgb(110, 202, 255));
     }
-    80% {
-        text-shadow: 0 0 1vw rgb(0, 150, 255);
-        filter: drop-shadow(0 0 1vw rgb(0, 150, 255));
+    75% {
+        text-shadow: 0 0 1vw rgba(0, 149, 255, 0.5);
+        filter: drop-shadow(0 0 1vw rgba(0, 149, 255, 0.5));
     }
 }
 
