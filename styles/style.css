@@ -13,8 +13,9 @@ body {
     margin-top: -17.5vw;
     margin-left: -17.5vw;
     border-radius: 25%;
-    animation-name: fade2;
-    animation-duration: 10s;
+    animation-name: blue;
+    animation-duration: 60s;
+    animation-fill-mode: forwards;
 }
 
 #black {
@@ -28,17 +29,20 @@ body {
     margin-top: -17.4vw;
     margin-left: -17.4vw;
     border-radius: 25%;
+    animation-name: black;
+    animation-duration: 60s;
+    animation-fill-mode: forwards;
 }
 
 #black2 {
     background: linear-gradient(90deg, rgba(0, 0, 0, 0), black, black, rgba(0, 0, 0, 0));
-    height: 3vw;
+    height: 6vw;
     width: 4vw;
     display: block;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: 16.2vw;
+    margin-top: 15vw;
     margin-left: -2vw;
 }
 
@@ -51,8 +55,8 @@ body {
     left: 50%;
     margin-left: -2vw;
     margin-top: 16.2vw;
-    animation-name: fade2;
-    animation-duration: 10s;
+    animation-name: skull;
+    animation-duration: 15s;
 }
 
 #pic-text {
@@ -71,9 +75,9 @@ body {
     bottom: 50%;
     left: 50%;
     margin-left: -3vw;
-    filter: drop-shadow(0 0 1vw rgb(0, 150, 255));
-    animation-name: fade;
-    animation-duration: 15s;
+    filter: drop-shadow(0 0 1vw rgb(0, 125, 255));
+    animation-name: fade, omega;
+    animation-duration: 60s;
 }
 
 p {
@@ -82,38 +86,220 @@ p {
     color: white;
     font-family: 'Orbitron', sans-serif;
     text-align: center;
-    text-shadow: 0 0 1vw rgb(0, 150, 255);
+    filter: drop-shadow(0 0 1vw rgb(0, 125, 255));
     font-size: 2.5vw;
     animation-name: fade;
-    animation-duration: 15s;
+    animation-duration: 60s;
     padding: 0 0 0 0;
     margin: 1vw 0 0 0;
-
 }
 
 @keyframes fade {
     0% {
         opacity: 0;
     }
-    40% {
+    10% {
         opacity: 0;
     }
-    70% {
-        text-shadow: 0 0 5vw rgb(110, 202, 255);
-        filter: drop-shadow(0 0 5vw rgb(110, 202, 255));
+    17.5% {
+        opacity: 0;
+        font-size: 2.75vw;
     }
-    75% {
-        text-shadow: 0 0 1vw rgba(0, 149, 255, 0.5);
-        filter: drop-shadow(0 0 1vw rgba(0, 149, 255, 0.5));
+    19.17% {
+        opacity: 1;
+        font-size: 2.5vw;
+    }
+    24% {
+        filter: drop-shadow(0 0 5vw rgb(0, 0, 0));
+    }
+    28.39%,
+    31.73%,
+    35.07%,
+    38.41%,
+    41.75%,
+    45.09%,
+    48.43%,
+    51.77%,
+    55.11%,
+    58.45%,
+    61.79%,
+    65.13%,
+    68.47%,
+    71.81%,
+    75.15%,
+    78.49%,
+    81.83%,
+    85.17%,
+    88.51%,
+    91.85%,
+    95.19%,
+    98.53% {
+        filter: drop-shadow(0 0 1vw rgb(0, 125, 255));
+    }
+    30.06%,
+    33.4%,
+    36.74%,
+    40.08%,
+    43.42%,
+    46.76%,
+    50.1%,
+    53.44%,
+    56.78%,
+    60.12%,
+    63.46%,
+    66.8%,
+    70.14%,
+    73.48%,
+    76.82%,
+    80.16%,
+    83.5%,
+    86.84%,
+    90.18%,
+    93.52%,
+    96.86%,
+    100% {
+        filter: drop-shadow(0 0 1.1vw rgb(0, 125, 255));
     }
 }
 
-@keyframes fade2 {
+@keyframes omega {
+    17.5% {
+        width: 6.6vw;
+        margin-left: -3.3vw;
+        margin-top: 0.3vw;
+    }
+    19.17% {
+        width: 6vw;
+        margin-left: -3vw;
+        margin-top: 0;
+    }
+}
+
+@keyframes skull {
     0% {
         opacity: 0;
     }
-
     33.33% {
         opacity: 0;
+        margin-top: 13.2vw;
+    }
+    46.66% {
+        opacity: 1;
+        margin-top: 16.2vw;
+    }
+}
+
+@keyframes blue {
+    0% {
+        opacity: 0;
+    }
+    6% {
+        opacity: 0;
+    }
+    24% {
+        opacity: 1;
+        filter: drop-shadow(0 0 0vw rgb(0, 0, 0));    
+    }
+    28.39%,
+    31.73%,
+    35.07%,
+    38.41%,
+    41.75%,
+    45.09%,
+    48.43%,
+    51.77%,
+    55.11%,
+    58.45%,
+    61.79%,
+    65.13%,
+    68.47%,
+    71.81%,
+    75.15%,
+    78.49%,
+    81.83%,
+    85.17%,
+    88.51%,
+    91.85%,
+    95.19%,
+    98.53% {
+        filter: drop-shadow(0 0 2vw rgba(0, 100, 255, 0.2));
+    }
+    30.06%,
+    33.4%,
+    36.74%,
+    40.08%,
+    43.42%,
+    46.76%,
+    50.1%,
+    53.44%,
+    56.78%,
+    60.12%,
+    63.46%,
+    66.8%,
+    70.14%,
+    73.48%,
+    76.82%,
+    80.16%,
+    83.5%,
+    86.84%,
+    90.18%,
+    93.52%,
+    96.86%,
+    100% {
+        filter: drop-shadow(0 0 2.25vw rgba(0, 100, 255, 0.225));
+    }
+}
+
+@keyframes black {
+    24% {
+        box-shadow: 0 0 0 black inset;    
+    }
+    28.39%,
+    31.73%,
+    35.07%,
+    38.41%,
+    41.75%,
+    45.09%,
+    48.43%,
+    51.77%,
+    55.11%,
+    58.45%,
+    61.79%,
+    65.13%,
+    68.47%,
+    71.81%,
+    75.15%,
+    78.49%,
+    81.83%,
+    85.17%,
+    88.51%,
+    91.85%,
+    95.19%,
+    98.53% {
+        box-shadow: 0 0 1.75vw rgba(0, 100, 255, 0.2) inset;
+    }
+    30.06%,
+    33.4%,
+    36.74%,
+    40.08%,
+    43.42%,
+    46.76%,
+    50.1%,
+    53.44%,
+    56.78%,
+    60.12%,
+    63.46%,
+    66.8%,
+    70.14%,
+    73.48%,
+    76.82%,
+    80.16%,
+    83.5%,
+    86.84%,
+    90.18%,
+    93.52%,
+    96.86%,
+    100% {
+        box-shadow: 0 0 2vw rgba(0, 100, 255, 0.225) inset;
     }
 }
