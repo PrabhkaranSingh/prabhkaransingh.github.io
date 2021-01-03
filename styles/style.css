@@ -13,9 +13,8 @@ body {
     margin-top: -17.5vw;
     margin-left: -17.5vw;
     border-radius: 25%;
-    animation-name: blue;
-    animation-duration: 60s;
-    animation-fill-mode: forwards;
+    filter: drop-shadow(0 0 2.25vw rgba(0, 100, 255, 0.225));
+    animation: blue-blink 2s infinite, blue 0s 1 forwards;
 }
 
 #black {
@@ -29,9 +28,21 @@ body {
     margin-top: -17.4vw;
     margin-left: -17.4vw;
     border-radius: 25%;
-    animation-name: black;
-    animation-duration: 60s;
-    animation-fill-mode: forwards;
+    box-shadow: 0 0 2vw rgba(0, 100, 255, 0.225) inset;
+    animation: black-blink 2s infinite, black 0s 1 forwards;
+}
+
+#black3 {
+    background: black;
+    height: 34.8vw;
+    width: 34.8vw;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -17.4vw;
+    margin-left: -17.4vw;
+    border-radius: 25%;
 }
 
 #black2 {
@@ -56,7 +67,7 @@ body {
     margin-left: -2vw;
     margin-top: 16.2vw;
     animation-name: skull;
-    animation-duration: 15s;
+    animation-duration: 0s;
 }
 
 #pic-text {
@@ -75,9 +86,9 @@ body {
     bottom: 50%;
     left: 50%;
     margin-left: -3vw;
-    filter: drop-shadow(0 0 1vw rgb(0, 125, 255));
-    animation-name: fade, omega;
-    animation-duration: 60s;
+    margin-top: 10vw;
+    filter: drop-shadow(0 0 1.1vw rgb(0, 125, 255));
+    animation: fade 2s infinite, omega 0s 1 forwards;
 }
 
 p {
@@ -86,15 +97,46 @@ p {
     color: white;
     font-family: 'Orbitron', sans-serif;
     text-align: center;
-    filter: drop-shadow(0 0 1vw rgb(0, 125, 255));
     font-size: 2.5vw;
-    animation-name: fade;
+    animation-name: fade, p;
     animation-duration: 60s;
     padding: 0 0 0 0;
     margin: 1vw 0 0 0;
+    filter: drop-shadow(0 0 1.1vw rgb(0, 125, 255));
+    animation: fade 2s infinite, p 0s 1 forwards;
 }
 
 @keyframes fade {
+    50% {
+        filter: drop-shadow(0 0 1vw rgb(0, 125, 255));
+    }
+    100% {
+        filter: drop-shadow(0 0 1.1vw rgb(0, 125, 255));
+    }
+}
+
+@keyframes omega {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 0;
+    }
+    17.5% {
+        opacity: 0;
+        width: 6.6vw;
+        margin-left: -3.3vw;
+        margin-top: 0.3vw;
+    }
+    19.17% {
+        opacity: 1;
+        width: 6vw;
+        margin-left: -3vw;
+        margin-top: 0;
+    }
+}
+
+@keyframes p{
     0% {
         opacity: 0;
     }
@@ -108,70 +150,6 @@ p {
     19.17% {
         opacity: 1;
         font-size: 2.5vw;
-    }
-    24% {
-        filter: drop-shadow(0 0 5vw rgb(0, 0, 0));
-    }
-    28.39%,
-    31.73%,
-    35.07%,
-    38.41%,
-    41.75%,
-    45.09%,
-    48.43%,
-    51.77%,
-    55.11%,
-    58.45%,
-    61.79%,
-    65.13%,
-    68.47%,
-    71.81%,
-    75.15%,
-    78.49%,
-    81.83%,
-    85.17%,
-    88.51%,
-    91.85%,
-    95.19%,
-    98.53% {
-        filter: drop-shadow(0 0 1vw rgb(0, 125, 255));
-    }
-    30.06%,
-    33.4%,
-    36.74%,
-    40.08%,
-    43.42%,
-    46.76%,
-    50.1%,
-    53.44%,
-    56.78%,
-    60.12%,
-    63.46%,
-    66.8%,
-    70.14%,
-    73.48%,
-    76.82%,
-    80.16%,
-    83.5%,
-    86.84%,
-    90.18%,
-    93.52%,
-    96.86%,
-    100% {
-        filter: drop-shadow(0 0 1.1vw rgb(0, 125, 255));
-    }
-}
-
-@keyframes omega {
-    17.5% {
-        width: 6.6vw;
-        margin-left: -3.3vw;
-        margin-top: 0.3vw;
-    }
-    19.17% {
-        width: 6vw;
-        margin-left: -3vw;
-        margin-top: 0;
     }
 }
 
@@ -189,6 +167,15 @@ p {
     }
 }
 
+@keyframes blue-blink {
+    50% {
+        filter: drop-shadow(0 0 2vw rgba(0, 100, 255, 0.2));
+    }
+    100% {
+        filter: drop-shadow(0 0 2.25vw rgba(0, 100, 255, 0.225));
+    }
+}
+
 @keyframes blue {
     0% {
         opacity: 0;
@@ -198,108 +185,26 @@ p {
     }
     24% {
         opacity: 1;
-        filter: drop-shadow(0 0 0vw rgb(0, 0, 0));    
     }
-    28.39%,
-    31.73%,
-    35.07%,
-    38.41%,
-    41.75%,
-    45.09%,
-    48.43%,
-    51.77%,
-    55.11%,
-    58.45%,
-    61.79%,
-    65.13%,
-    68.47%,
-    71.81%,
-    75.15%,
-    78.49%,
-    81.83%,
-    85.17%,
-    88.51%,
-    91.85%,
-    95.19%,
-    98.53% {
-        filter: drop-shadow(0 0 2vw rgba(0, 100, 255, 0.2));
+}
+
+@keyframes black-blink {
+    50% {
+        box-shadow: 0 0 1.75vw rgba(0, 100, 255, 0.2) inset;
     }
-    30.06%,
-    33.4%,
-    36.74%,
-    40.08%,
-    43.42%,
-    46.76%,
-    50.1%,
-    53.44%,
-    56.78%,
-    60.12%,
-    63.46%,
-    66.8%,
-    70.14%,
-    73.48%,
-    76.82%,
-    80.16%,
-    83.5%,
-    86.84%,
-    90.18%,
-    93.52%,
-    96.86%,
     100% {
-        filter: drop-shadow(0 0 2.25vw rgba(0, 100, 255, 0.225));
+        box-shadow: 0 0 2vw rgba(0, 100, 255, 0.225) inset;
     }
 }
 
 @keyframes black {
+    0% {
+        opacity: 0;
+    }
+    6% {
+        opacity: 0;
+    }
     24% {
-        box-shadow: 0 0 0 black inset;    
-    }
-    28.39%,
-    31.73%,
-    35.07%,
-    38.41%,
-    41.75%,
-    45.09%,
-    48.43%,
-    51.77%,
-    55.11%,
-    58.45%,
-    61.79%,
-    65.13%,
-    68.47%,
-    71.81%,
-    75.15%,
-    78.49%,
-    81.83%,
-    85.17%,
-    88.51%,
-    91.85%,
-    95.19%,
-    98.53% {
-        box-shadow: 0 0 1.75vw rgba(0, 100, 255, 0.2) inset;
-    }
-    30.06%,
-    33.4%,
-    36.74%,
-    40.08%,
-    43.42%,
-    46.76%,
-    50.1%,
-    53.44%,
-    56.78%,
-    60.12%,
-    63.46%,
-    66.8%,
-    70.14%,
-    73.48%,
-    76.82%,
-    80.16%,
-    83.5%,
-    86.84%,
-    90.18%,
-    93.52%,
-    96.86%,
-    100% {
-        box-shadow: 0 0 2vw rgba(0, 100, 255, 0.225) inset;
+        opacity: 1;
     }
 }
