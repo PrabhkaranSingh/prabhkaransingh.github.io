@@ -13,7 +13,7 @@ body {
     margin-top: -17.5vw;
     margin-left: -17.5vw;
     border-radius: 25%;
-    filter: drop-shadow(0 0 2.25vw rgba(0, 100, 255, 0.225));
+    filter: drop-shadow(0 0 0 white) drop-shadow(0 0 2.25vw rgba(0, 100, 255, 0.225));
     animation: blue-blink 2s infinite, blue 60s 1 forwards;
 }
 
@@ -28,7 +28,7 @@ body {
     margin-top: -17.4vw;
     margin-left: -17.4vw;
     border-radius: 25%;
-    box-shadow: 0 0 2vw rgba(0, 100, 255, 0.225) inset;
+    box-shadow: 0 0 0 white inset, 0 0 2vw rgba(0, 100, 255, 0.225) inset;
     animation: black-blink 2s infinite, black 60s 1 forwards;
 }
 
@@ -87,7 +87,7 @@ body {
     left: 50%;
     margin-left: -3vw;
     margin-top: 10vw;
-    filter: drop-shadow(0 0 1.1vw rgb(0, 125, 255));
+    filter: drop-shadow(0 0 0 white) drop-shadow(0 0 1.1vw rgb(0, 125, 255));
     animation: fade 2s infinite, omega 60s 1 forwards;
 }
 
@@ -102,7 +102,7 @@ p {
     animation-duration: 60s;
     padding: 0 0 0 0;
     margin: 1vw 0 0 0;
-    filter: drop-shadow(0 0 1.1vw rgb(0, 125, 255));
+    filter: drop-shadow(0 0 0 white) drop-shadow(0 0 1.1vw rgb(0, 125, 255));
     animation: fade 2s infinite, p 60s 1 forwards;
 }
 
